@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-02T15:32:13+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Emily</title><subtitle>学习分享</subtitle><author><name>true</name></author><entry><title type="html">github pages搭建</title><link href="http://localhost:4000/2020/09/05/how-web-come-from.html" rel="alternate" type="text/html" title="github pages搭建" /><published>2020-09-05T00:00:00+08:00</published><updated>2020-09-05T00:00:00+08:00</updated><id>http://localhost:4000/2020/09/05/how-web-come-from</id><content type="html" xml:base="http://localhost:4000/2020/09/05/how-web-come-from.html"><![CDATA[<h1 id="github-pages搭建">github pages搭建</h1>
+<ul id="markdown-toc">
+  <li><a href="#github-pages搭建" id="markdown-toc-github-pages搭建">github pages搭建</a>    <ul>
+      <li><a href="#环境依赖" id="markdown-toc-环境依赖">环境依赖</a>        <ul>
+          <li><a href="#github-pages" id="markdown-toc-github-pages">Github Pages</a></li>
+          <li><a href="#jekyll" id="markdown-toc-jekyll">jekyll</a></li>
+        </ul>
+      </li>
+      <li><a href="#安装过程" id="markdown-toc-安装过程">安装过程</a>        <ul>
+          <li><a href="#安装ruby" id="markdown-toc-安装ruby">安装Ruby</a></li>
+          <li><a href="#问题和解决" id="markdown-toc-问题和解决">问题和解决</a></li>
+          <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h2 id="环境依赖">环境依赖</h2>
+<p>使用Github Pages和jekyll搭建网站；优点是免费和有很多模板可以使用；</p>
+<h3 id="github-pages">Github Pages</h3>
+
+<p>Github Pages是Github提供的静态网站托管服务，可以免费托管静态网站；</p>
+<h3 id="jekyll">jekyll</h3>
+<p>jekyll相当于是一个Ruby Gem组件, 所以安装过程需要安装Ruby;</p>
+<h2 id="安装过程">安装过程</h2>
+<p>基于windows搭建；</p>
+<h3 id="安装ruby">安装Ruby</h3>
+<p>最麻烦的就是环境配置：</p>
+<ol>
+  <li>官网下载<a href="https://rubyinstaller.org">RubyInstaller</a>， 使用默认配置项安装;官方推荐新手安装Ruby+Devkit 3.2.X (x64)
+<img src="/assets/img/install_ruby.png" alt="alt text" /></li>
+  <li>ridk install , 用于安装gems；选择第三个：MSYS2 and MINGW development tool chain.
+<img src="/assets/img/install_ruby_1.png" alt="选择3" /></li>
+  <li>添加bin目录到环境变量中，建议重启生效；cmd执行gem install jekyll bundler</li>
+</ol>
+
+<p>此时就可以使用jekyll自行生成blog了；
+本地实时看到修改效果，需要绑定远端 bundle exec jekyll serve或者jekyll server</p>
+
+<h3 id="问题和解决">问题和解决</h3>
+<p>’’’
+  由于我使用了模板，在build过程中遇到了很多包解析不到的问题
+‘’’</p>
+<ol>
+  <li>主要是参考文章安装几个包；可以自检；另外make版本不一样应该没问题；</li>
+  <li>遇到gem install一些版本依赖问题，也是Google解决；比如<a href="https://github.com/ffi/ffi/issues/598">ffi安装错误</a></li>
+  <li>关于Ruby版本问题，最开始安装3.3运行失败，改为3.2就成功了，<a href="https://talk.jekyllrb.com/t/error-when-executing-bundle-install/8822/3">参考</a></li>
+  <li>解析包丢失问题，执行bundle add webrick（模块名），然后bundle install
+    <h3 id="参考">参考</h3>
+    <p>目前成功的是参考这些：<br />
+ <a href="https://zhuanlan.zhihu.com/p/51240503">Github Pages+jekyll搭建个人站点</a><br />
+<a href="https://www.jekyll.com.cn/docs/&quot;%3Ehttps://www.jekyll.com.cn/docs/%3C/a%3E">官网资料可以多看看</a><br />
+<a href="http://jekyllthemes.org/themes/HardCandy-Jekyll/">我参考的模板（感谢作者）</a><br />
+<a href="https://developer.aliyun.com/article/25449">Jekyll kramdown配置</a></p>
+  </li>
+</ol>]]></content><author><name>Emily</name></author><category term="Web" /><summary type="html"><![CDATA[github pages搭建 github pages搭建 环境依赖 Github Pages 环境依赖 使用Github Pages和jekyll搭建网站；优点是免费和有很多模板可以使用； Github Pages]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/2018/05/17/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-17T14:05:21+08:00</published><updated>2018-05-17T14:05:21+08:00</updated><id>http://localhost:4000/2018/05/17/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2018/05/17/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>true</name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Hello Jekyll</title><link href="http://localhost:4000/2017/04/18/hello-jekyll.html" rel="alternate" type="text/html" title="Hello Jekyll" /><published>2017-04-18T00:00:00+08:00</published><updated>2017-04-18T00:00:00+08:00</updated><id>http://localhost:4000/2017/04/18/hello-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/04/18/hello-jekyll.html"><![CDATA[<blockquote>
+  <p>Transform your plain text into static websites and blogs.</p>
+</blockquote>
+
+<h1 id="welcome">Welcome</h1>
+
+<h2 id="welcome-1">Welcome</h2>
+
+<h3 id="welcome-2">Welcome</h3>
+
+<p>This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.</p>
+
+<h3 id="so-what-is-jekyll-exactlypermalink">So what is Jekyll, exactly?Permalink</h3>
+
+<p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like <a href="https://daringfireball.net/projects/markdown/">Markdown</a>) and our <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.</p>
+
+<h3 id="helpful-hintspermalink">Helpful HintsPermalink</h3>
+
+<p>Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.</p>
+
+<h3 id="video-test">Video Test</h3>
+
+<iframe type="text/html" width="100%" height="385" src="http://www.youtube.com/embed/gfmjMWjn-Xg" frameborder="0"></iframe>]]></content><author><name>Jekyll</name></author><category term="jekyll" /><summary type="html"><![CDATA[Transform your plain text into static websites and blogs.]]></summary></entry></feed>

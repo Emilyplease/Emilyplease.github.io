@@ -1,0 +1,329 @@
+<!-- 博文的布局-Layout -->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入head标签 -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-sclable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="学习分享" />
+<meta name="keywords" content="图形学, unity, shader" />
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_default.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<!-- SNS-icon -->
+<script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
+<!-- share.css -->
+<link rel="stylesheet" href="/assets/css/share.min.css">
+<!-- font -->
+<link rel="stylesheet" href="/assets/css/font.css">
+<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
+
+<!-- Favicon -->
+<link href="/assets/profile.jpeg" rel="shortcut icon" />
+<link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
+<!-- Android Lolipop Theme Color -->
+<!-- <meta name="theme-color" content="#1464FB"> -->
+<title>github pages搭建</title>
+<!-- 百度统计 -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?https://Emilyplease.github.io/";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- 谷歌分析 -->
+
+
+<!-- Android Lolipop Theme Color -->
+<meta name="theme-color" content=" rgb(153, 153, 229) ">
+</head>
+<body>
+
+<!-- 顶部锚点 -->
+<a id="htmlup" name="htmlup"></a>
+<!-- 引入博文顶部选项 -->
+
+<header id="post-header" style="background-color:rgb(153, 153, 229);">
+  <div class="top-center">
+      <div class="logo">
+          <a href="/" title="my awesome webtitle" style="color: white;">Emily</a>
+      </div>
+      <nav class="top-nav">
+          <ul>
+              
+                <li><a href="/" style="color: white;">首页</a></li>
+              
+                <li><a href="/tags.html" style="color: white;">标签</a></li>
+              
+                <li><a href="/timeline.html" style="color: white;">时间线</a></li>
+              
+                <li><a href="/about.html" style="color: white;">关于博主</a></li>
+              
+                <li><a href="/friendLink.html" style="color: white;">友情链接</a></li>
+              
+          </ul>
+      </nav>
+      <div id="top-boot">
+        <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img src="/assets/boot_white.png" alt=""></a>
+        <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
+      </div>
+  </div>
+
+</header>
+
+
+<!-- 引入移动下拉选项 -->
+<div id="boot-area">
+    <ul>
+        
+          <a href="/"><li>首页</li></a>
+        
+          <a href="/tags.html"><li>标签</li></a>
+        
+          <a href="/timeline.html"><li>时间线</li></a>
+        
+          <a href="/about.html"><li>关于博主</li></a>
+        
+          <a href="/friendLink.html"><li>友情链接</li></a>
+        
+    </ul>
+</div>
+
+<!-- 引入博文顶部样式 -->
+<!-- 版本一 垃圾 -->
+<!-- <div class="wow fadeIn top" data-wow-duration="3.5s" >
+    <span class="wow fadeInUp" data-wow-delay="0.2s">github pages搭建</span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.4s"></span>
+    <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;Emily</span>
+</div> -->
+
+<!-- 版本二 可切换页面 -->
+
+<div class="post-top" style="background-color:rgb(153, 153, 229);">
+  <!-- 页面宽度大于800px -->
+  <div class="left-area">
+    
+      <a href="javascript:;" class="btn bounceInLeft animated" onmouseover="showLeft();this.style.color='rgb(153, 153, 229)';" onmouseout="goneLeft();this.style.color='rgba(0,0,0,.2)';"><</a>
+      <div id="left-tab" style="display:none;"><span class="left-san"></span><span class="left-main" style="color:rgb(153, 153, 229);"><sapn class="main">没有上一页咯</sapn></span></div>
+    
+  </div>
+  <div class="post-titlearea">
+    <span class="wow fadeInUp" data-wow-delay="0.2s">github pages搭建</span>
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.4s"></span> -->
+    <!-- <span class="wow fadeInUp" data-wow-delay="0.6s">作者&nbsp;&nbsp;|&nbsp;&nbsp;Emily</span> -->
+  </div>
+  <div class="right-area">
+    
+      <a href="/2018/05/17/welcome-to-jekyll.html" class="btn bounceInRight self-animated" onmouseover="showRight();this.style.color='rgb(153, 153, 229)';" onmouseout="goneRight();this.style.color='rgba(0,0,0,.2)';">></a>
+      <div id="right-tab" style="display:none;"><span class="right-san"></span><span class="right-main" style="color:rgb(153, 153, 229);"><sapn class="main">Welcome to Jekyll!</sapn></span></div>
+    
+  </div>
+
+  <!-- 页面宽度小于800px -->
+  <div class="post-changearea">
+    
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid rgb(153, 153, 229);border-bottom: 2px solid rgb(153, 153, 229);"><span><br>没有上一篇咯</span></a>
+    
+    
+      <a href="/2018/05/17/welcome-to-jekyll.html" class="rightchange" style="border-left: 1px solid rgb(153, 153, 229);border-bottom: 2px solid rgb(153, 153, 229);"><span>下一篇<br><br>Welcome to Jekyll!</span></a>
+    
+  </div>
+</div>
+
+
+<div class="markdown-body fadeInUp animated">
+
+  
+
+  <!-- 文章内容 -->
+  <h1 id="github-pages搭建">github pages搭建</h1>
+<ul id="markdown-toc">
+  <li><a href="#github-pages搭建" id="markdown-toc-github-pages搭建">github pages搭建</a>    <ul>
+      <li><a href="#环境依赖" id="markdown-toc-环境依赖">环境依赖</a>        <ul>
+          <li><a href="#github-pages" id="markdown-toc-github-pages">Github Pages</a></li>
+          <li><a href="#jekyll" id="markdown-toc-jekyll">jekyll</a></li>
+        </ul>
+      </li>
+      <li><a href="#安装过程" id="markdown-toc-安装过程">安装过程</a>        <ul>
+          <li><a href="#安装ruby" id="markdown-toc-安装ruby">安装Ruby</a></li>
+          <li><a href="#问题和解决" id="markdown-toc-问题和解决">问题和解决</a></li>
+          <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h2 id="环境依赖">环境依赖</h2>
+<p>使用Github Pages和jekyll搭建网站；优点是免费和有很多模板可以使用；</p>
+<h3 id="github-pages">Github Pages</h3>
+
+<p>Github Pages是Github提供的静态网站托管服务，可以免费托管静态网站；</p>
+<h3 id="jekyll">jekyll</h3>
+<p>jekyll相当于是一个Ruby Gem组件, 所以安装过程需要安装Ruby;</p>
+<h2 id="安装过程">安装过程</h2>
+<p>基于windows搭建；</p>
+<h3 id="安装ruby">安装Ruby</h3>
+<p>最麻烦的就是环境配置：</p>
+<ol>
+  <li>官网下载<a href="https://rubyinstaller.org">RubyInstaller</a>， 使用默认配置项安装;官方推荐新手安装Ruby+Devkit 3.2.X (x64)
+<img src="/assets/img/install_ruby.png" alt="alt text" /></li>
+  <li>ridk install , 用于安装gems；选择第三个：MSYS2 and MINGW development tool chain.
+<img src="/assets/img/install_ruby_1.png" alt="选择3" /></li>
+  <li>添加bin目录到环境变量中，建议重启生效；cmd执行gem install jekyll bundler</li>
+</ol>
+
+<p>此时就可以使用jekyll自行生成blog了；
+本地实时看到修改效果，需要绑定远端 bundle exec jekyll serve或者jekyll server</p>
+
+<h3 id="问题和解决">问题和解决</h3>
+<p>’’’
+  由于我使用了模板，在build过程中遇到了很多包解析不到的问题
+‘’’</p>
+<ol>
+  <li>主要是参考文章安装几个包；可以自检；另外make版本不一样应该没问题；</li>
+  <li>遇到gem install一些版本依赖问题，也是Google解决；比如<a href="https://github.com/ffi/ffi/issues/598">ffi安装错误</a></li>
+  <li>关于Ruby版本问题，最开始安装3.3运行失败，改为3.2就成功了，<a href="https://talk.jekyllrb.com/t/error-when-executing-bundle-install/8822/3">参考</a></li>
+  <li>解析包丢失问题，执行bundle add webrick（模块名），然后bundle install
+    <h3 id="参考">参考</h3>
+    <p>目前成功的是参考这些：<br />
+ <a href="https://zhuanlan.zhihu.com/p/51240503">Github Pages+jekyll搭建个人站点</a><br />
+<a href="https://www.jekyll.com.cn/docs/&quot;%3Ehttps://www.jekyll.com.cn/docs/%3C/a%3E">官网资料可以多看看</a><br />
+<a href="http://jekyllthemes.org/themes/HardCandy-Jekyll/">我参考的模板（感谢作者）</a><br />
+<a href="https://developer.aliyun.com/article/25449">Jekyll kramdown配置</a></p>
+  </li>
+</ol>
+
+
+  <!-- 引入share模块 -->
+  
+  <div class="social-share-wrapper">
+    <div class="social-share"></div>
+  </div>
+
+
+<!-- share.js -->
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+  socialShare('.social-share', {
+    sites: [
+      
+        'qq'
+        ,
+        
+      
+        'wechat'
+        ,
+        
+      
+        'weibo'
+        ,
+        
+      
+        'twitter'
+        ,
+        
+      
+        'facebook'
+        
+      
+    ],
+    wechatQrcodeTitle: "分享到微信朋友圈",
+    wechatQrcodeHelper: '期待在朋友圈见到这篇文章'
+  });
+</script>
+
+</div>
+
+<!-- 底部锚点 -->
+<a id="htmldown" name="htmldown"></a>
+<!-- 引入评论模块 -->
+
+
+
+    <section class="post-footer-item comment">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDI2OS8xMDgwNg=="></div>
+    </section>
+
+    <!-- 来必力City版安装代码 -->
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    <!-- City版安装代码已完成 -->
+
+
+
+
+
+<!-- 引入goto模块 -->
+<div class="bounceInRight animated go">
+  <a title="顶部切换页面" class="gototop" href="#htmlup" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Top
+    </div>
+  </a>
+  <a title="底部有livere评论哦" class="gotobottom" href="#htmldown" target="_self">
+    <div class="box" style="font-family:'ffad_matroregular';">
+        Foot
+    </div>
+  </a>
+</div>
+
+<!-- 引入页面底部模块 -->
+<footer id="bottom">
+  <br>
+  <span>Emily ©
+  
+  
+    2018
+    -
+  
+  2024
+  <br>
+  Powered by <a href="https://www.jekyll.com.cn/">Jekyll</a> | <a href="https://github.com/xukimseven/HardCandy-Jekyll">HardCandy-Jekyll</a></span>
+</footer>
+
+
+<!-- 引用wow.js的动画效果 -->
+<script src="/assets/js/wow.js"></script>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        // offset: 600,
+        mobile: true,
+        live: true
+    });
+    wow.init();
+</script>
+<!-- 页面刷新回到顶部 -->
+<script>
+    window.onbeforeunload = function(){
+        //刷新后页面自动回到顶部
+        document.documentElement.scrollTop = 0;  //ie下
+        document.body.scrollTop = 0;  //非ie
+    }
+</script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
